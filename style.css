@@ -1,0 +1,23 @@
+.d-links {
+    position: sticky;
+    height: 100vh;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 3em;
+}
+
+.d-links > div {
+    background-color: white;
+    border: 1px solid black;
+    margin: 0;
+    height: 100%;
+    text-align: center;
+    display: grid;
+	align-items: center;
+}
+
+.d-links > div:hover {
+    background-color: rgb(208, 208, 208);
+}
