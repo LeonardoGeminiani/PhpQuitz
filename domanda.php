@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Domanda</title>
-    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <?php
@@ -30,76 +30,100 @@
         $response = json_decode($response, true);
     ?>
 
-    <div class="d-flex cont-g">
-        <div class="d-links">
-            <?php
-                foreach($domande as $i => $d){
-                    $e = $i + 1;
-                    echo '<div><a href="/domanda.php?id=' . $e . '">' . $e . "</a></div>";
-                }
-            ?>
-        </div>
-    
-        <div class="container-md">
 
-            <h1>
-                Indovina il personaggio famoso
-            </h1>
-
-            <?php
-                if(isset($response["itemListElement"][0]["result"]["description"])){
-                    $aiuto = $response["itemListElement"][0]["result"]["description"];
-                    // echo $aiuto;
-                }
-            ?>
-
-            <form 
+    <div class="container-md d-flex cont-g ">
+        <div class=" card">
+            <div class="d-links card-header">
+            <ul class="nav nav-tabs card-header-tabs">
                 <?php
-                    if($id < count($domande)){
-                        $nid = $id+1;
-                        echo 'action="domanda.php?id=' . $nid . '"';
-                    }else {
-                        echo 'action="risultati.php"';
+                    foreach($domande as $i => $d){
+                        $e = $i + 1;
+                        $c = "";
+                        if($e == $id){
+                            $c = "active";
+                        }
+                        echo '<li class="nav-item"><a  class="nav-link ' . $c . '" href="/domanda.php?id=' . $e . '">' . $e . "</a></li>";
                     }
                 ?>
-                method="post" >
+                </ul>
+            </div>
+        
+            <div class="card-body">
+                <?php
+                    if(isset($response["itemListElement"][0]["result"]["description"])){
+                        $aiuto = $response["itemListElement"][0]["result"]["description"];
+                        // echo $aiuto;
+                    }
+                ?>
 
-                <div class="d-flex">
-                    <div class="m-4">    
-                        <img class="img-fluid" src="<?php echo $domanda["img"]; ?>">
-                    </div>
-                    <div class="m-4">
-                        <p>Please select your favorite Web language:</p>
-                        
-                        <?php 
-                            $ris = [$domanda["A"], $domanda["B"], $domanda["C"]];
+                <form 
+                    <?php
+                        if($id < count($domande)){
+                            $nid = $id+1;
+                            echo 'action="domanda.php?id=' . $nid . '"';
+                        }else {
+                            echo 'action="risultati.php"';
+                        }
+                    ?>
+                    method="post" >
+
+                    <div class="d-flex">
+                        <div class="m-4">    
+                            <img class="rounded img" src="<?php echo $domanda["img"]; ?>">
+                        </div>
+                        <div class="m-4">
+                            <h1>
+                                Indovina il personaggio famoso
+                            </h1>
                             
-                            for($i = 0; $i < count($ris); $i++){
-                                $ck = "";
-                                if($_SESSION["risposte"][$id] != null){
-                                    if($_SESSION["risposte"][$id] == $ris[$i]){
-                                        $ck = "checked";
+                            <div class="form-check">
+                                <?php 
+                                    $ris = [$domanda["A"], $domanda["B"], $domanda["C"]];
+                                    
+                                    for($i = 0; $i < count($ris); $i++){
+                                        $ck = "";
+                                        if($_SESSION["risposte"][$id] != null){
+                                            if($_SESSION["risposte"][$id] == $ris[$i]){
+                                                $ck = "checked";
+                                            }
+                                        }
+                                        
+                                        echo <<<EOL
+                                        <input class="form-check-input" type="radio" id="sel_$i" name="sel" value="$ris[$i]" $ck>
+                                        <label for="sel_$i">$ris[$i]</label><br>
+                                        EOL;
                                     }
-                                }
-                                
-                                echo <<<EOL
-                                <input type="radio" id="sel_$i" name="sel" value="$ris[$i]" $ck>
-                                <label for="sel_$i">$ris[$i]</label><br>
-                                EOL;
-                            }
-                        ?>
-                        
-                        <button type="submit" class="btn btn-primary" >Sub</button>
-                
-                        <?php
-                            if($id > 1){
-                                $pid = $id-1;
-                                echo '<a href="domanda.php?id=' . $pid . '" class="btn btn-primary">Domanda Precedente</a>';
-                            }
-                        ?>
+                                ?>
+                            </div>
+                            <div class="mt-4">
+                                <nav aria-label="...">
+                                    <ul class="pagination pagination-lg">  
+                                        <?php
+                                            $c = "";
+                                            if($id == 1){
+                                                $c = "disabled";
+                                            }
+
+                                            $pid = $id-1;
+                                            echo '<li class="page-item ' . $c . '"><a href="domanda.php?id=' . $pid . '" class="page-link">&laquo; Domanda Precedente</a></li>';
+                                        ?>
+                                        
+                                        <li class="page-item">
+                                            <button type="submit" class="page-link" ><?php 
+                                                if($id == 20) {
+                                                    echo "Invia Le Risposte";
+                                                } else {
+                                                    echo "Domanda Successiva";
+                                                }                                            
+                                            ?> &raquo;</button>
+                                        </li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
                     </div>
-                </div>
-            </form>
+                </form>
+            </div>
         </div>
     </div>
 </body>
