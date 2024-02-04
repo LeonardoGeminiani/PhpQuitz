@@ -34,6 +34,18 @@
     height: 30vi;
 }
 
+.my-card {
+    padding: 0;
+}
+
 body {
     /* background-color: var(--onyx); */
+}
+
+.my-bd, .img-i{
+    height: 100%;
+}
+
+.img-i {
+    object-fit: cover;
 }

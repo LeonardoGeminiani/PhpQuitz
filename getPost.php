@@ -8,5 +8,4 @@ function getPost($id){
         $_SESSION["risposte"] [$id] = $_POST["sel"];
     }
 }
-
 ?>
