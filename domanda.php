@@ -7,9 +7,15 @@
     <link rel="stylesheet" href="bootstrap.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<?php 
+include("function.php"); 
+include("themeGetter.php"); 
+?>
+<body data-bs-theme="<?php 
+    echo $THEME
+?>">
     <?php
-        include("getPost.php");
+        
         session_start();
 
         $id = $_GET["id"];
@@ -35,7 +41,7 @@
 
 
     <div class="container-md d-flex cont-g ">
-        <div class="shadow-lg card">
+        <div class="shadow card">
             <div class="d-links card-header">
             <ul class="nav nav-tabs card-header-tabs">
                 <?php
@@ -131,6 +137,8 @@
             </div>
         </div>
     </div>
+    <div id="mainWrap"></div>
+    <div id="main"></div>
 </body>
 </html>
 <script src="bootstrap.bundle.min.js"></script>

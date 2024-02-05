@@ -7,7 +7,8 @@
     <link rel="stylesheet" href="bootstrap.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<?php include("function.php"); ?>
+<body data-bs-theme="<?php echo getCookieTheme(); ?>">
     <?php
         // print header
         include("header.php");
@@ -16,7 +17,6 @@
     <div class="container">
         <div class="row" style="justify-content:center;">
             <?php
-            include("getPost.php");
             
             session_start();
             getPost(20);
@@ -40,7 +40,7 @@
                 if(!$rispostaGiusta) $s = "danger";
 
                 echo <<<EOL
-                <div class="my-card card col-md-4 m-2" style="max-width: 30rem;">
+                <div class="shadow my-card card col-md-4 m-2" style="max-width: 30rem;">
                     <div class="card-header">Domanda $i</div>
                     <div class="row g-0 my-bd">
                         <div class="col-md-4">
@@ -86,6 +86,8 @@
 
         </div>
     </div>
+    <div id="mainWrap"></div>
+    <div id="main"></div>
 </body>
 </html>
 <script src="bootstrap.bundle.min.js"></script>

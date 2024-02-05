@@ -7,7 +7,8 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="bootstrap.min.css">
 </head>
-<body>
+<?php include("function.php"); ?>
+<body data-bs-theme="<?php echo getCookieTheme(); ?>">
     <?php
         session_start();
         $domande = [];
@@ -46,7 +47,10 @@
 
     <h1>Inizia il Quiz!!</h1>
     <a href="domanda.php?id=1" class="btn btn-primary">Inizia</a>
+    
 
+    <div id="mainWrap"></div>
+    <div id="main"></div>
 </body>
 </html>
 <script src="bootstrap.bundle.min.js"></script>
