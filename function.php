@@ -14,11 +14,13 @@ function SetCookieTheme($val){
 }
 
 function getCookieTheme() {
+    // default theme: dark
+    $defaultTheme = "dark";
+
     if(!isset($_COOKIE["theme"])){
-        // default theme: dark
-        SetCookieTheme("dark");
+        SetCookieTheme($defaultTheme);
     }
-    return $_COOKIE["theme"];
+    return $_COOKIE["theme"] ?? $defaultTheme;
 }
 
 ?>
