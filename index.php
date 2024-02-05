@@ -39,6 +39,9 @@
 
         $_SESSION["domande"] = $domandeSel;
         // var_dump($domandeSel);
+
+        // print header
+        include("header.php");
     ?>
 
     <h1>Inizia il Quiz!!</h1>

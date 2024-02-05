@@ -8,6 +8,11 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <?php
+        // print header
+        include("header.php");
+    ?>
+
     <div class="container">
         <div class="row" style="justify-content:center;">
             <?php

@@ -49,3 +49,10 @@ body {
 .img-i {
     object-fit: cover;
 }
+
+
+.my-in {
+    gap: 10px;
+    display: flex;
+    align-items: center;
+}

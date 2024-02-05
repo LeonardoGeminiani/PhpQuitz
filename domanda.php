@@ -28,11 +28,14 @@
 
         $response = file_get_contents("https://kgsearch.googleapis.com/v1/entities:search?languages=it&query=" . $query . "&key=AIzaSyAz65f_5fNhV7wFpguCMBlD5m5BCTtteVg&limit=1&indent=True");
         $response = json_decode($response, true);
+
+        // print header
+        include("header.php");
     ?>
 
 
     <div class="container-md d-flex cont-g ">
-        <div class=" card">
+        <div class="shadow-lg card">
             <div class="d-links card-header">
             <ul class="nav nav-tabs card-header-tabs">
                 <?php
@@ -89,8 +92,10 @@
                                         }
                                         
                                         echo <<<EOL
-                                        <input class="form-check-input" type="radio" id="sel_$i" name="sel" value="$ris[$i]" $ck>
-                                        <label for="sel_$i">$ris[$i]</label><br>
+                                        <div class="form-check my-in">
+                                            <input class="form-check-input" type="radio" id="sel_$i" name="sel" value="$ris[$i]" $ck>
+                                            <label class="fs-4 form-check-label" for="sel_$i">$ris[$i]</label>
+                                        </div>
                                         EOL;
                                     }
                                 ?>
