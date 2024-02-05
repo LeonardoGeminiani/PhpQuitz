@@ -7,8 +7,13 @@
     <link rel="stylesheet" href="bootstrap.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
-<?php include("function.php"); ?>
-<body data-bs-theme="<?php echo getCookieTheme(); ?>">
+<?php 
+include("function.php");
+include("themeGetter.php"); 
+?>
+<body data-bs-theme="<?php 
+    echo $THEME
+?>">
     <?php
         // print header
         include("header.php");
@@ -17,7 +22,7 @@
     <div class="container">
         <div class="row" style="justify-content:center;">
             <?php
-            
+
             session_start();
             getPost(20);
             

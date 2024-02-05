@@ -7,8 +7,13 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="bootstrap.min.css">
 </head>
-<?php include("function.php"); ?>
-<body data-bs-theme="<?php echo getCookieTheme(); ?>">
+<?php 
+include("function.php");
+include("themeGetter.php"); 
+?>
+<body data-bs-theme="<?php 
+    echo $THEME
+?>">
     <?php
         session_start();
         $domande = [];
