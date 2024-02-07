@@ -23,6 +23,13 @@ echo $THEME
     // $id = $_GET["id"];
     $id = $_POST["id"];
 
+    // chache id, if theme is changed using another form
+    if(!isset($id)){
+        $id = $_SESSION["id"];
+    } else {
+        $_SESSION["id"] = $id;
+    }
+
     if ($id == 21) {
         $host = $_SERVER['HTTP_HOST'];
         $uri = rtrim(dirname($_SERVER['PHP_SELF']), '/\\');
@@ -31,7 +38,7 @@ echo $THEME
         exit;
     }
 
-    getPost($id - 1);
+    getPost($_POST["oldId"]);
 
     $domande = $_SESSION["domande"];
     $domanda = $domande[$id - 1];
@@ -63,6 +70,9 @@ echo $THEME
         // }
         ?> method="post">
 
+            <?php
+                echo '<input type="hidden" name="oldId" value="'. $id .'">';
+            ?>
             <div class="shadow card">
                 <div class="d-links card-header">
                     <ul class="nav nav-tabs card-header-tabs">
