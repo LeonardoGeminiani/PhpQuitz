@@ -1,158 +1,131 @@
-Nome Personaggio;A;B;C
-Gabriele d'Annunzio;Giovanni Verga;Gabriele d'Annunzio;Albert Einstein
-Leonardo da Vinci;Michelangelo Buonarroti;Leonardo da Vinci;Isaac Newton
-Cleopatra;Julius Caesar;Cleopatra;Alexander the Great
-Winston Churchill;Adolf Hitler;Winston Churchill;Franklin D. Roosevelt
-Queen Elizabeth I;King Henry VIII;Queen Elizabeth I;William Shakespeare
-Nelson Mandela;Martin Luther King Jr.;Nelson Mandela;Mahatma Gandhi
-Marie Curie;Albert Einstein;Marie Curie;Isaac Newton
-Abraham Lincoln;George Washington;Abraham Lincoln;Thomas Jefferson
-Joan of Arc;William the Conqueror;Joan of Arc;Queen Elizabeth I
-Mozart;Beethoven;Mozart;Bach
-George Washington;Thomas Jefferson;George Washington;Abraham Lincoln
-Genghis Khan;Alexander the Great;Genghis Khan;Julius Caesar
-Charles Darwin;Isaac Newton;Charles Darwin;Galileo Galilei
-Elizabeth I;Queen Victoria;Elizabeth I;Catherine the Great
-Martin Luther;John Calvin;Martin Luther;King Henry VIII
-Simone de Beauvoir;Albert Camus;Simone de Beauvoir;Jean-Paul Sartre
-Mahatma Gandhi;Nelson Mandela;Mahatma Gandhi;Martin Luther King Jr.
-Vincent van Gogh;Pablo Picasso;Vincent van Gogh;Leonardo da Vinci
-Benjamin Franklin;Thomas Edison;Benjamin Franklin;James Watt
-Catherine the Great;Peter the Great;Catherine the Great;Elizabeth I
-Fidel Castro;Che Guevara;Fidel Castro;Hugo Chavez
-John F. Kennedy;Robert F. Kennedy;John F. Kennedy;Barack Obama
-Rosa Parks;Martin Luther King Jr.;Rosa Parks;Harriet Tubman
-Sigmund Freud;Carl Jung;Sigmund Freud;Albert Einstein
-Marlon Brando;Humphrey Bogart;Marlon Brando;Charlie Chaplin
-Che Guevara;Fidel Castro;Che Guevara;Mao Zedong
-Emily Dickinson;Robert Frost;Emily Dickinson;William Wordsworth
-Mother Teresa;Mahatma Gandhi;Mother Teresa;Martin Luther King Jr.
-Oscar Wilde;Mark Twain;Oscar Wilde;William Shakespeare
-Pablo Picasso;Salvador Dali;Pablo Picasso;Vincent van Gogh
-Sojourner Truth;Harriet Tubman;Sojourner Truth;Frederick Douglass
-William Shakespeare;Christopher Marlowe;William Shakespeare;John Milton
-James Joyce;Ernest Hemingway;James Joyce;F. Scott Fitzgerald
-Mao Zedong;Deng Xiaoping;Mao Zedong;Chiang Kai-shek
-Coco Chanel;Yves Saint Laurent;Coco Chanel;Christian Dior
-Emperor Qin Shi Huang;Alexander the Great;Emperor Qin Shi Huang;Julius Caesar
-Ernest Hemingway;John Steinbeck;Ernest Hemingway;George Orwell
-Frida Kahlo;Diego Rivera;Frida Kahlo;Salvador Dali
-Marilyn Monroe;Audrey Hepburn;Marilyn Monroe;Grace Kelly
-Mikhail Gorbachev;Joseph Stalin;Mikhail Gorbachev;Vladimir Putin
-Marie Antoinette;Louis XVI;Marie Antoinette;Napoleon Bonaparte
-Pope Francis;Pope John Paul II;Pope Francis;Mother Teresa
-Rutherford B. Hayes;Ulysses S. Grant;Rutherford B. Hayes;Abraham Lincoln
-Sun Yat-sen;Mao Zedong;Sun Yat-sen;Chiang Kai-shek
-Susan B. Anthony;Elizabeth Cady Stanton;Susan B. Anthony;Harriet Tubman
-Theodore Roosevelt;Woodrow Wilson;Theodore Roosevelt;Franklin D. Roosevelt
-William Faulkner;Ernest Hemingway;William Faulkner;F. Scott Fitzgerald
-Wolfgang Amadeus Mozart;Ludwig van Beethoven;Wolfgang Amadeus Mozart;Johann Sebastian Bach
-Yoko Ono;John Lennon;Yoko Ono;Paul McCartney
-Barack Obama;George W. Bush;Barack Obama;Bill Clinton
-Charles Dickens;Charlotte Brontë;Charles Dickens;Jane Austen
-Elizabeth II;Queen Victoria;Elizabeth II;Prince Philip
-Gandhi;Martin Luther King Jr.;Gandhi;Nelson Mandela
-John Locke;Thomas Hobbes;John Locke;Jean-Jacques Rousseau
-Karl Marx;Friedrich Engels;Karl Marx;Vladimir Lenin
-Malcolm X;Martin Luther King Jr.;Malcolm X;Rosa Parks
-Napoleon Bonaparte;George Washington;Napoleon Bonaparte;Emperor Qin Shi Huang
-Plato;Aristotle;Plato;Socrates
-Rosa Parks;Martin Luther King Jr.;Rosa Parks;Malcolm X
-Salvador Dali;Pablo Picasso;Salvador Dali;Vincent van Gogh
-Vincent van Gogh;Claude Monet;Vincent van Gogh;Pablo Picasso
-Winston Churchill;Franklin D. Roosevelt;Winston Churchill;Joseph Stalin
-John F. Kennedy;Lyndon B. Johnson;John F. Kennedy;Richard Nixon
-Cleopatra;Mark Antony;Cleopatra;Julius Caesarù
-Helen Keller;Anne Sullivan;Helen Keller;Thomas Edison
-Marie Curie;Nikola Tesla;Marie Curie;Thomas Edison
-Albert Einstein;Isaac Newton;Albert Einstein;Stephen Hawking
-Nelson Mandela;Desmond Tutu;Nelson Mandela;Steve Biko
-Queen Victoria;Prince Albert;Queen Victoria;King Edward VII
-Fidel Castro;Hugo Chavez;Fidel Castro;Che Guevara
-Coco Chanel;Christian Dior;Coco Chanel;Yves Saint Laurent
-Walt Disney;Steve Jobs;Walt Disney;Bill Gates
-Winston Churchill;Dwight D. Eisenhower;Winston Churchill;Charles de Gaulle
-Leonardo da Vinci;Donatello;Leonardo da Vinci;Raphael
-Martin Luther King Jr.;Malcolm X;Martin Luther King Jr.;Jesse Jackson
-Elizabeth I;Mary Queen of Scots;Elizabeth I;Anne Boleyn
-Anne Frank;Elie Wiesel;Anne Frank;Oskar Schindler
-Wolfgang Amadeus Mozart;Johann Sebastian Bach;Wolfgang Amadeus Mozart;Ludwig van Beethoven
-Franklin D. Roosevelt;Harry S. Truman;Franklin D. Roosevelt;Dwight D. Eisenhower
-Bill Clinton;George H.W. Bush;Bill Clinton;Ronald Reagan
-Indira Gandhi;Jawaharlal Nehru;Indira Gandhi;Mahatma Gandhi
-Pablo Picasso;Salvador Dali;Pablo Picasso;Claude Monet
-Albert Camus;Jean-Paul Sartre;Albert Camus;Simone de Beauvoir
-Emily Dickinson;William Wordsworth;Emily Dickinson;Robert Frost
-Henry Ford;Thomas Edison;Henry Ford;Steve Jobs
-Charles Dickens;Jane Austen;Charles Dickens;Charlotte Brontë
-Mao Zedong;Chiang Kai-shek;Mao Zedong;Deng Xiaoping
-John Locke;Socrates;John Locke;Aristotle
-Marie Antoinette;Napoleon Bonaparte;Marie Antoinette;Louis XVI
-Eleanor Roosevelt;Jackie Kennedy;Eleanor Roosevelt;Queen Elizabeth II
-Gandhi;Martin Luther King Jr.;Gandhi;Nelson Mandela
-Pope John Paul II;Mother Teresa;Pope John Paul II;Dalai Lama
-Thomas Jefferson;James Madison;Thomas Jefferson;John Adams
-Charlie Chaplin;Buster Keaton;Charlie Chaplin;Laurel and Hardy
-George Orwell;Aldous Huxley;George Orwell;Ray Bradbury
-Rosa Parks;Harriet Tubman;Rosa Parks;Martin Luther King Jr.
-John Lennon;Paul McCartney;John Lennon;George Harrison
-Grace Kelly;Audrey Hepburn;Grace Kelly;Marilyn Monroe
-Winston Churchill;Joseph Stalin;Winston Churchill;Adolf Hitler
-Malcolm X;Rosa Parks;Malcolm X;Martin Luther King Jr.
-Jane Austen;Charlotte Brontë;Jane Austen;Emily Brontë
-Vladimir Putin;Joseph Stalin;Vladimir Putin;Mikhail Gorbachev
-Marilyn Monroe;Elvis Presley;Marilyn Monroe;James Dean
-George Washington;Thomas Jefferson;George Washington;John Adams
-Marie Curie;Marie Antoinette;Marie Curie;Catherine the Great
-Muhammad Ali;Joe Frazier;Muhammad Ali;Mike Tyson
-Mozart;Bach;Mozart;Beethoven
-Elizabeth II;Prince Philip;Elizabeth II;Prince Charles
-Catherine the Great;Elizabeth I;Catherine the Great;Isabella I
-Che Guevara;Mao Zedong;Che Guevara;Fidel Castro
-Thomas Edison;Nikola Tesla;Thomas Edison;Albert Einstein
-Charles Darwin;Galileo Galilei;Charles Darwin;Isaac Newton
-Walt Disney;Steven Spielberg;Walt Disney;George Lucas
-John F. Kennedy;Robert F. Kennedy;John F. Kennedy;Lyndon B. Johnson
-Eleanor Roosevelt;Jackie Kennedy;Eleanor Roosevelt;Margaret Thatcher
-Winston Churchill;Charles de Gaulle;Winston Churchill;Franklin D. Roosevelt
-Vincent van Gogh;Claude Monet;Vincent van Gogh;Pablo Picasso
-Amelia Earhart;Charles Lindbergh;Amelia Earhart;Howard Hughes
-Albert Einstein;Stephen Hawking;Albert Einstein;Nikola Tesla
-Coco Chanel;Yves Saint Laurent;Coco Chanel;Christian Dior
-Abraham Lincoln;John F. Kennedy;Abraham Lincoln;Franklin D. Roosevelt
-Gandhi;Nelson Mandela;Gandhi;Martin Luther King Jr.
-Cleopatra;Mark Antony;Cleopatra;Augustus Caesar
-Wolfgang Amadeus Mozart;Ludwig van Beethoven;Wolfgang Amadeus Mozart;Johann Sebastian Bach
-Rosa Parks;Malcolm X;Rosa Parks;Martin Luther King Jr.
-Martin Luther;John Calvin;Martin Luther;John Knox
-Mother Teresa;Princess Diana;Mother Teresa;Mahatma Gandhi
-Marie Curie;Marie Antoinette;Marie Curie;Catherine the Great
-Pablo Picasso;Salvador Dali;Pablo Picasso;Claude Monet
-Napoleon Bonaparte;Duke of Wellington;Napoleon Bonaparte;Tsar Alexander I
-Queen Elizabeth I;Mary Queen of Scots;Queen Elizabeth I;Catherine de' Medici
-Sigmund Freud;Carl Jung;Sigmund Freud;Albert Einstein
-Susan B. Anthony;Elizabeth Cady Stanton;Susan B. Anthony;Sojourner Truth
-John Locke;Thomas Hobbes;John Locke;Voltaire
-Winston Churchill;Margaret Thatcher;Winston Churchill;Queen Elizabeth II
-George Orwell;Aldous Huxley;George Orwell;Ray Bradbury
-Leonardo da Vinci;Raphael;Leonardo da Vinci;Michelangelo Buonarroti
-Marlon Brando;Humphrey Bogart;Marlon Brando;James Dean
-Emperor Qin Shi Huang;Sun Tzu;Emperor Qin Shi Huang;Liu Bang
-John Lennon;Paul McCartney;John Lennon;George Harrison
-Malcolm X;Martin Luther King Jr.;Malcolm X;Rosa Parks
-Simone de Beauvoir;Jean-Paul Sartre;Simone de Beauvoir;Albert Camus
-Fidel Castro;Hugo Chavez;Fidel Castro;Che Guevara
-Anne Frank;Elie Wiesel;Anne Frank;Oskar Schindler
-William Shakespeare;Christopher Marlowe;William Shakespeare;Ben Jonson
-Henry Ford;Elon Musk;Henry Ford;Steve Jobs
-Che Guevara;Camilo Cienfuegos;Che Guevara;Fidel Castro
-Genghis Khan;Attila the Hun;Genghis Khan;Alexander the Great
-Queen Victoria;Prince Albert;Queen Victoria;Prince Philip
-Nikola Tesla;Thomas Edison;Nikola Tesla;Albert Einstein
-Bill Gates;Steve Jobs;Bill Gates;Mark Zuckerberg
-Socrates;Plato;Socrates;Aristotle
-Mao Zedong;Deng Xiaoping;Mao Zedong;Chiang Kai-shek
-Leon Trotsky;Joseph Stalin;Leon Trotsky;Vladimir Lenin
-Queen Elizabeth II;Prince Philip;Queen Elizabeth II;Prince Charles
-Eleanor Roosevelt;Margaret Thatcher;Eleanor Roosevelt;Golda Meir
-Marilyn Monroe;Grace Kelly;Marilyn Monroe;Audrey Hepburn
+Nome Personaggio,Opzione 1,Opzione 2,Opzione 3,Opzione 4
+Leonardo da Vinci,Michelangelo Buonarroti,Leonardo da Vinci,Isaac Newton,Raphael
+Cleopatra,Julius Caesar,Cleopatra,Alexander the Great,Mark Antony
+Winston Churchill,Adolf Hitler,Winston Churchill,Franklin D. Roosevelt,Joseph Stalin
+Queen Elizabeth I,King Henry VIII,Queen Elizabeth I,William Shakespeare,Queen Victoria
+Nelson Mandela,Martin Luther King Jr.,Nelson Mandela,Mahatma Gandhi,Desmond Tutu
+Marie Curie,Albert Einstein,Marie Curie,Isaac Newton,Nikola Tesla
+Abraham Lincoln,George Washington,Abraham Lincoln,Thomas Jefferson,John F. Kennedy
+Joan of Arc,William the Conqueror,Joan of Arc,Queen Elizabeth I,Napoleon Bonaparte
+Mozart,Beethoven,Mozart,Bach,Tchaikovsky
+George Washington,Thomas Jefferson,George Washington,Abraham Lincoln,Alexander Hamilton
+Genghis Khan,Alexander the Great,Genghis Khan,Julius Caesar,Attila the Hun
+Charles Darwin,Isaac Newton,Charles Darwin,Galileo Galilei,Albert Einstein
+Elizabeth I,Queen Victoria,Elizabeth I,Catherine the Great,Mary Queen of Scots
+Martin Luther,John Calvin,Martin Luther,King Henry VIII,John Knox
+Simone de Beauvoir,Albert Camus,Simone de Beauvoir,Jean-Paul Sartre,Voltaire
+Mahatma Gandhi,Nelson Mandela,Mahatma Gandhi,Martin Luther King Jr.,Mother Teresa
+Vincent van Gogh,Pablo Picasso,Vincent van Gogh,Leonardo da Vinci,Claude Monet
+Benjamin Franklin,Thomas Edison,Benjamin Franklin,James Watt,Steve Jobs
+Catherine the Great,Peter the Great,Catherine the Great,Elizabeth I,Napoleon Bonaparte
+Fidel Castro,Che Guevara,Fidel Castro,Hugo Chavez,Mao Zedong
+John F. Kennedy,Robert F. Kennedy,John F. Kennedy,Barack Obama,Ronald Reagan
+Rosa Parks,Martin Luther King Jr.,Rosa Parks,Harriet Tubman,Malcolm X
+Sigmund Freud,Carl Jung,Sigmund Freud,Albert Einstein,Isaac Newton
+Marlon Brando,Humphrey Bogart,Marlon Brando,Charlie Chaplin,James Dean
+Che Guevara,Fidel Castro,Che Guevara,Mao Zedong,Hugo Chavez
+Emily Dickinson,Robert Frost,Emily Dickinson,William Wordsworth,Edgar Allan Poe
+Mother Teresa,Mahatma Gandhi,Mother Teresa,Martin Luther King Jr.,Pope John Paul II
+Oscar Wilde,Mark Twain,Oscar Wilde,William Shakespeare,Emily Brontë
+Pablo Picasso,Salvador Dali,Pablo Picasso,Vincent van Gogh,Claude Monet
+Sojourner Truth,Harriet Tubman,Sojourner Truth,Frederick Douglass,Booker T. Washington
+William Shakespeare,Christopher Marlowe,William Shakespeare,John Milton,Geoffrey Chaucer
+James Joyce,Ernest Hemingway,James Joyce,F. Scott Fitzgerald,William Faulkner
+Mao Zedong,Deng Xiaoping,Mao Zedong,Chiang Kai-shek,Sun Yat-sen
+Coco Chanel,Yves Saint Laurent,Coco Chanel,Christian Dior,Givenchy
+Emperor Qin Shi Huang,Alexander the Great,Emperor Qin Shi Huang,Julius Caesar,Genghis Khan
+Ernest Hemingway,John Steinbeck,Ernest Hemingway,George Orwell,William Faulkner
+Frida Kahlo,Diego Rivera,Frida Kahlo,Salvador Dali,Pablo Picasso
+Marilyn Monroe,Audrey Hepburn,Marilyn Monroe,Grace Kelly,Elizabeth Taylor
+Mikhail Gorbachev,Joseph Stalin,Mikhail Gorbachev,Vladimir Putin,Nikita Khrushchev
+Marie Antoinette,Louis XVI,Marie Antoinette,Napoleon Bonaparte,Queen Victoria
+Pope Francis,Pope John Paul II,Pope Francis,Mother Teresa,Dalai Lama
+Rutherford B. Hayes,Ulysses S. Grant,Rutherford B. Hayes,Abraham Lincoln,Andrew Johnson
+Sun Yat-sen,Mao Zedong,Sun Yat-sen,Chiang Kai-shek,Deng Xiaoping
+Susan B. Anthony,Elizabeth Cady Stanton,Susan B. Anthony,Harriet Tubman,Sojourner Truth
+Theodore Roosevelt,Woodrow Wilson,Theodore Roosevelt,Franklin D. Roosevelt,Harry S. Truman
+William Faulkner,Ernest Hemingway,William Faulkner,F. Scott Fitzgerald,John Steinbeck
+Wolfgang Amadeus Mozart,Ludwig van Beethoven,Wolfgang Amadeus Mozart,Johann Sebastian Bach,Franz Liszt
+Yoko Ono,John Lennon,Yoko Ono,Paul McCartney,Ringo Starr
+Barack Obama,George W. Bush,Barack Obama,Bill Clinton,Jimmy Carter
+Charles Dickens,Charlotte Brontë,Charles Dickens,Jane Austen,Emily Brontë
+Elizabeth II,Queen Victoria,Elizabeth II,Prince Philip,Prince Charles
+Gandhi,Martin Luther King Jr.,Gandhi,Nelson Mandela,Malcolm X
+John Locke,Thomas Hobbes,John Locke,Jean-Jacques Rousseau,Voltaire
+Karl Marx,Friedrich Engels,Karl Marx,Vladimir Lenin,Leon Trotsky
+Malcolm X,Martin Luther King Jr.,Malcolm X,Rosa Parks,Nelson Mandela
+Napoleon Bonaparte,George Washington,Napoleon Bonaparte,Emperor Qin Shi Huang,Julius Caesar
+Plato,Aristotle,Plato,Socrates,Cicero
+Rosa Parks,Martin Luther King Jr.,Rosa Parks,Malcolm X,Harriet Tubman
+Salvador Dali,Pablo Picasso,Salvador Dali,Vincent van Gogh,Claude Monet
+Vincent van Gogh,Claude Monet,Vincent van Gogh,Pablo Picasso,Salvador Dali
+Winston Churchill,Franklin D. Roosevelt,Winston Churchill,Joseph Stalin,Adolf Hitler
+Napoleon Bonaparte,Duke of Wellington,Napoleon Bonaparte,Tsar Alexander I,George Washington
+Queen Elizabeth I,Mary Queen of Scots,Queen Elizabeth I,Catherine de' Medici,Queen Isabella I of Castile
+Sigmund Freud,Carl Jung,Sigmund Freud,Albert Einstein,Thomas Edison
+Susan B. Anthony,Elizabeth Cady Stanton,Susan B. Anthony,Sojourner Truth,Harriet Tubman
+John Locke,Thomas Hobbes,John Locke,Voltaire,Rene Descartes
+Winston Churchill,Margaret Thatcher,Winston Churchill,Queen Elizabeth II,Charles de Gaulle
+George Orwell,Aldous Huxley,George Orwell,Ray Bradbury,Arthur C. Clarke
+Leonardo da Vinci,Raphael,Leonardo da Vinci,Michelangelo Buonarroti,Sandro Botticelli
+Marlon Brando,Humphrey Bogart,Marlon Brando,James Dean,Clark Gable
+Che Guevara,Camilo Cienfuegos,Che Guevara,Fidel Castro,Hugo Chavez
+Emperor Qin Shi Huang,Sun Tzu,Emperor Qin Shi Huang,Liu Bang,Alexander the Great
+Ernest Hemingway,John Steinbeck,Ernest Hemingway,George Orwell,Mark Twain
+Frida Kahlo,Diego Rivera,Frida Kahlo,Salvador Dali,Pablo Picasso
+Marilyn Monroe,Audrey Hepburn,Marilyn Monroe,Grace Kelly,Elizabeth Taylor
+Michael Jackson,Elvis Presley,Michael Jackson,Prince,David Bowie
+Walt Disney,Chuck Jones,Walt Disney,Jim Henson,Stan Lee
+Henry VIII,Elizabeth I,Henry VIII,King Edward VI,Queen Mary I
+Wolfgang Amadeus Mozart,Ludwig van Beethoven,Wolfgang Amadeus Mozart,Johann Sebastian Bach,Antonio Vivaldi
+Pablo Picasso,Salvador Dali,Pablo Picasso,Claude Monet,Vincent van Gogh
+Salvador Dali,Pablo Picasso,Salvador Dali,Vincent van Gogh,Rene Magritte
+Vincent van Gogh,Claude Monet,Vincent van Gogh,Pablo Picasso,Paul Cezanne
+Winston Churchill,Franklin D. Roosevelt,Winston Churchill,Joseph Stalin,Adolf Hitler
+Leon Trotsky,Joseph Stalin,Leon Trotsky,Vladimir Lenin,Mikhail Gorbachev
+Queen Elizabeth II,Prince Philip,Queen Elizabeth II,Prince Charles,Prince William
+Eleanor Roosevelt,Margaret Thatcher,Eleanor Roosevelt,Golda Meir,Rosa Parks
+Charles Dickens,Charlotte Brontë,Charles Dickens,Jane Austen,Emily Brontë
+Malcolm X,Martin Luther King Jr.,Malcolm X,Rosa Parks,Nelson Mandela
+Napoleon Bonaparte,George Washington,Napoleon Bonaparte,Emperor Qin Shi Huang,Julius Caesar
+Plato,Aristotle,Plato,Socrates,Alexander the Great
+Rosa Parks,Martin Luther King Jr.,Rosa Parks,Malcolm X,Harriet Tubman
+Salvador Dali,Pablo Picasso,Salvador Dali,Vincent van Gogh,Claude Monet
+Vincent van Gogh,Claude Monet,Vincent van Gogh,Pablo Picasso,Salvador Dali
+Winston Churchill,Franklin D. Roosevelt,Winston Churchill,Joseph Stalin,Adolf Hitler
+Nelson Mandela,Martin Luther King Jr.,Nelson Mandela,Mahatma Gandhi,Desmond Tutu
+Marie Curie,Albert Einstein,Marie Curie,Isaac Newton,Nikola Tesla
+Abraham Lincoln,George Washington,Abraham Lincoln,Thomas Jefferson,John F. Kennedy
+Joan of Arc,William the Conqueror,Joan of Arc,Queen Elizabeth I,Napoleon Bonaparte
+Mozart,Beethoven,Mozart,Bach,Tchaikovsky
+George Washington,Thomas Jefferson,George Washington,Abraham Lincoln,Alexander Hamilton
+Genghis Khan,Alexander the Great,Genghis Khan,Julius Caesar,Attila the Hun
+Charles Darwin,Isaac Newton,Charles Darwin,Galileo Galilei,Albert Einstein
+Elizabeth I,Queen Victoria,Elizabeth I,Catherine the Great,Mary Queen of Scots
+Martin Luther,John Calvin,Martin Luther,King Henry VIII,John Knox
+Simone de Beauvoir,Albert Camus,Simone de Beauvoir,Jean-Paul Sartre,Voltaire
+Mahatma Gandhi,Nelson Mandela,Mahatma Gandhi,Martin Luther King Jr.,Mother Teresa
+Vincent van Gogh,Pablo Picasso,Vincent van Gogh,Leonardo da Vinci,Claude Monet
+Benjamin Franklin,Thomas Edison,Benjamin Franklin,James Watt,Steve Jobs
+Catherine the Great,Peter the Great,Catherine the Great,Elizabeth I,Napoleon Bonaparte
+Fidel Castro,Che Guevara,Fidel Castro,Hugo Chavez,Mao Zedong
+John F. Kennedy,Robert F. Kennedy,John F. Kennedy,Barack Obama,Ronald Reagan
+Rosa Parks,Martin Luther King Jr.,Rosa Parks,Harriet Tubman,Malcolm X
+Sigmund Freud,Carl Jung,Sigmund Freud,Albert Einstein,Isaac Newton
+Marlon Brando,Humphrey Bogart,Marlon Brando,Charlie Chaplin,James Dean
+Che Guevara,Fidel Castro,Che Guevara,Mao Zedong,Hugo Chavez
+Emily Dickinson,Robert Frost,Emily Dickinson,William Wordsworth,Edgar Allan Poe
+Mother Teresa,Mahatma Gandhi,Mother Teresa,Martin Luther King Jr.,Pope John Paul II
+Oscar Wilde,Mark Twain,Oscar Wilde,William Shakespeare,Emily Brontë
+Pablo Picasso,Salvador Dali,Pablo Picasso,Vincent van Gogh,Claude Monet
+Sojourner Truth,Harriet Tubman,Sojourner Truth,Frederick Douglass,Booker T. Washington
+William Shakespeare,Christopher Marlowe,William Shakespeare,John Milton,Geoffrey Chaucer
+James Joyce,Ernest Hemingway,James Joyce,F. Scott Fitzgerald,William Faulkner
+Mao Zedong,Deng Xiaoping,Mao Zedong,Chiang Kai-shek,Sun Yat-sen
+Coco Chanel,Yves Saint Laurent,Coco Chanel,Christian Dior,Givenchy
+Emperor Qin Shi Huang,Alexander the Great,Emperor Qin Shi Huang,Julius Caesar,Genghis Khan
+Ernest Hemingway,John Steinbeck,Ernest Hemingway,George Orwell,William Faulkner
+Frida Kahlo,Diego Rivera,Frida Kahlo,Salvador Dali,Pablo Picasso
+Marilyn Monroe,Audrey Hepburn,Marilyn Monroe,Grace Kelly,Elizabeth Taylor
+Michael Jackson,Elvis Presley,Michael Jackson,Prince,David Bowie
+Walt Disney,Chuck Jones,Walt Disney,Jim Henson,Stan Lee
