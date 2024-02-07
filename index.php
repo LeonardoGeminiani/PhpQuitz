@@ -55,12 +55,22 @@ include("themeGetter.php");
         include("header.php");
     ?>
 
-    <div>
-        <h1>Inizia il Quiz!!</h1>
+    <div class="container-sm">
+        <div class="text-center m-5">
+            <h1 class="m-5 fw-semibold lh-1" style="font-size:3.6em;">Inizia il Quiz!!</h1>
 
-        <form method="post" action="domanda.php">
-            <button type="submit" name="id" value="1" class="btn btn-primary">Inizia</button>
-        </form>
+            <form method="post" action="domanda.php">
+                <button type="submit" name="id" value="1" class="mx-auto btn btn-primary btn btn-lg bd-btn-lg d-flex align-items-center justify-content-center fw-semibold">Inizia</button>
+            </form>
+            
+            <p class="m-4 lead">
+                "Scopri i Giganti della Storia" è un quiz coinvolgente che ti porterà a esplorare le vite e le gesta di alcuni dei personaggi più influenti e iconici della storia umana. 
+                <br>
+                Dalla saggezza di Confucio alla genialità di Leonardo da Vinci, dalla forza di Napoleone Bonaparte alla determinazione di Cleopatra, questo quiz ti sfiderà a testare la tua conoscenza su una vasta gamma di figure storiche.
+                <br>
+                Preparati a mettere alla prova la tua memoria e il tuo spirito d'osservazione mentre immergi nel passato e scopri le storie affascinanti di coloro che hanno plasmato il corso della storia mondiale.
+            </p>
+        </div>
     </div>
     
     <div id="mainWrap"></div>

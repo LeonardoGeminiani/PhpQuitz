@@ -10,7 +10,7 @@ include_once("themeGetter.php");
         
         <div class="d-flex " id="navbarSupportedContent">
             <form class="d-flex" method="post">
-                <button class="btn btn-outline-success" name="tema" value="<?php 
+                <button class="btn btn-primary" name="tema" value="<?php 
                     $nt;
                     if($THEME == "dark"){
                         $nt = "light";
