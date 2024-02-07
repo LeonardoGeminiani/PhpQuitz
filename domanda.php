@@ -45,23 +45,12 @@ echo $THEME
         exit;
     }
 
-    if(isset($_POST["oldId"]))
+    if (isset($_POST["oldId"]))
         getPost($_POST["oldId"]);
 
     $domande = $_SESSION["domande"];
     $domanda = $domande[$id - 1];
-    // if(!isset($domanda)){
-    //     // wrong id
-    //     var_dump($_SERVER);
-    //     echo $_SERVER['HTTP_HOST'] . "/domanda.php?id=1";
-    //     header('Location: http://'. $_SERVER['HTTP_HOST'] . "/domanda.php?id=1");
-    // }
-    
-    // $query = urlencode($domanda["nome"]);
-    
-    // $response = file_get_contents("https://kgsearch.googleapis.com/v1/entities:search?languages=it&query=" . $query . "&key=AIzaSyAz65f_5fNhV7wFpguCMBlD5m5BCTtteVg&limit=1&indent=True");
-    // $response = json_decode($response, true);
-    
+
     $aiuto = $domanda["desc"];
 
     // print header
@@ -70,17 +59,9 @@ echo $THEME
 
 
     <div class="container-md d-flex cont-g ">
-        <form <?php
-        // if($id < count($domande)){
-        //     $nid = $id+1;
-        echo 'action="domanda.php"';
-        // ?id=' . $nid . '"';
-        // }else {
-        //     echo 'action="risultati.php"';
-        // }
-        ?> method="post">
-
+        <form action="domanda.php" method="post">
             <?php
+
             echo '<input type="hidden" name="oldId" value="' . $id . '">';
             ?>
             <div class="shadow card">
@@ -103,15 +84,6 @@ echo $THEME
                 </div>
 
                 <div class="card-body">
-                    <?php
-                    // if (isset($response["itemListElement"][0]["result"]["description"])) {
-                    //     $aiuto = $response["itemListElement"][0]["result"]["description"];
-                    //     // echo $aiuto;
-                    // }
-                    ?>
-
-
-
                     <div class="d-flex">
                         <div class="m-4">
                             <img class="rounded img domanda-img" src="<?php echo $domanda["img"]; ?>">
