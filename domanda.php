@@ -58,7 +58,7 @@ echo $THEME
     // la stringa bonus
     $aiuto = $domanda["desc"];
 
-    // print header
+    // stampo l'header
     include("header.php");
     ?>
 
