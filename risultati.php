@@ -75,16 +75,8 @@ include("themeGetter.php");
                         </div>
                     </div>
                     EOL;
-                    
-                    // var_dump($i);
-                    // echo "<br>";
-                    // var_dump($value);
-                    // echo "<br>";
-                    
-                    // echo $value["val"], ($domande[$value["id"] -1]);
                 }
                 
-                // echo count($ris);
                 ?>
             </div>
 

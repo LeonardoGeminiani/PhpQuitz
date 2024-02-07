@@ -20,7 +20,6 @@ echo $THEME
 
     session_start();
 
-    // $id = $_GET["id"];
     $id = $_POST["id"];
 
     // chache id, if theme is changed using another form

@@ -49,7 +49,6 @@ include("themeGetter.php");
 
         $_SESSION["domande"] = $domandeSel;
         $_SESSION["bonus"] = $_SESSION["maxBonus"] = 6;
-        // var_dump($domandeSel);
 
         // print header
         include("header.php");
