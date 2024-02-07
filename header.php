@@ -11,6 +11,7 @@ include_once("themeGetter.php");
         <div class="d-flex " id="navbarSupportedContent">
             <form class="d-flex" method="post">
                 <button class="btn btn-primary" name="tema" value="<?php 
+                    // form per cambiare il tema
                     $nt;
                     if($THEME == "dark"){
                         $nt = "light";

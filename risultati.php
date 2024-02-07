@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Quitz</title>
+    <title>Risultati</title>
     <link rel="stylesheet" href="bootstrap.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
@@ -31,20 +31,21 @@ include("themeGetter.php");
                 $domande = $_SESSION["domande"];
                 
                 $risposteCorrette = 0;
+                // scorro tutte le risposte per stamparle
                 foreach ($ris as $i => $rispostaSelezionata) {
-                    // i = question id
-                    // value = response, if null no response given
+                    // i = id della domanda
+                    // rispostaSelezionata = risposta che è stata selezionata nella domanda
                     $img = $domande[$i-1]['img'];
                     $rispostaGiusta = false;
                     $risposta = $domande[$i-1]['nome'];
+                    // controllo se la risposta data corrisponde con la risposta giusta
                     if ($risposta == $rispostaSelezionata) {
                         $rispostaGiusta = true;
+                        // la aggiungo alle risposte corrette
                         $risposteCorrette++;
                     }
                     
-                    $s = "success";
-                    if(!$rispostaGiusta) $s = "danger";
-
+                    // stampo il numero della domanda e la sua immagine
                     echo <<<EOL
                     <div class="shadow my-card card col-md-4 m-2" style="max-width: 30rem;">
                         <div class="card-header">Domanda $i</div>
@@ -56,6 +57,7 @@ include("themeGetter.php");
                             <div class="card-body">
                     EOL;
 
+                    // risposta giusta -> verde; risposta sbagliata -> rosso
                     if($rispostaGiusta){
                         echo <<<EOL
                         <h5 class="card-title text-success">Risposta Giusta</h5>

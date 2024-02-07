@@ -1,9 +1,9 @@
 <?php
+// serve per prendere la risposta dalla precedente domanda
 function getPost($id)
 {
     if (isset($_POST["sel"])) {
-        // prec response
-
+        // risposta precedente
         $_SESSION["risposte"][$id] = $_POST["sel"];
     }
 }
@@ -15,7 +15,7 @@ function SetCookieTheme($val)
 
 function getCookieTheme()
 {
-    // default theme: light
+    // tema di default: light
     $defaultTheme = "light";
 
     if (!isset($_COOKIE["theme"])) {
