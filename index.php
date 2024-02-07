@@ -55,16 +55,15 @@ include("themeGetter.php");
         include("header.php");
     ?>
 
-    <h1>Inizia il Quiz!!</h1>
+    <div>
+        <h1>Inizia il Quiz!!</h1>
 
-    <form method="post" action="domanda.php">
-        <button type="submit" name="id" value="1" class="btn btn-primary">Inizia</button>
-    </form>
-
+        <form method="post" action="domanda.php">
+            <button type="submit" name="id" value="1" class="btn btn-primary">Inizia</button>
+        </form>
+    </div>
     
-
     <div id="mainWrap"></div>
     <div id="main"></div>
 </body>
 </html>
-<script src="bootstrap.bundle.min.js"></script>

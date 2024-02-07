@@ -97,4 +97,3 @@ include("themeGetter.php");
     <div id="main"></div>
 </body>
 </html>
-<script src="bootstrap.bundle.min.js"></script>

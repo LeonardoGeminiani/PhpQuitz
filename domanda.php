@@ -57,10 +57,10 @@ echo $THEME
     // }
     
     // $query = urlencode($domanda["nome"]);
-
+    
     // $response = file_get_contents("https://kgsearch.googleapis.com/v1/entities:search?languages=it&query=" . $query . "&key=AIzaSyAz65f_5fNhV7wFpguCMBlD5m5BCTtteVg&limit=1&indent=True");
     // $response = json_decode($response, true);
-
+    
     $aiuto = $domanda["desc"];
 
     // print header
@@ -124,7 +124,7 @@ echo $THEME
 
                                 <div class="form-check">
                                     <?php
-                                    $ris = [$domanda["A"], $domanda["B"], $domanda["C"],  $domanda["D"]];
+                                    $ris = [$domanda["A"], $domanda["B"], $domanda["C"], $domanda["D"]];
 
                                     for ($i = 0; $i < count($ris); $i++) {
                                         $ck = "";
@@ -208,7 +208,6 @@ echo $THEME
                             </div>
                         </div>
                     </div>
-
                 </div>
         </form>
     </div>
@@ -216,6 +215,4 @@ echo $THEME
     <div id="mainWrap"></div>
     <div id="main"></div>
 </body>
-
 </html>
-<script src="bootstrap.bundle.min.js"></script>
