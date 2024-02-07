@@ -22,20 +22,23 @@ echo $THEME
 
     $id = $_POST["id"];
 
-    // chache id, if theme is changed using another form
+    // carico l'id in sessione perchè se si utilizza il form di cambio tema verrebbe perso
     if (!isset($id)) {
         $id = $_SESSION["id"];
     } else {
         $_SESSION["id"] = $id;
     }
 
+    // controllo se è stato utilizzato il bonus
     if ($bonus = isset($_POST["bonus"])) {
         $_SESSION["bonus"] = $_POST["bonus"];
         $_SESSION["bonusUtil"][$id] = true;
+        // controllo se fosse stato usato in passato 
     } else if ($_SESSION["bonusUtil"][$id]) {
         $bonus = true;
     }
 
+    // dopo l'ultima domanda ridireziono il server verso la pagina dei risultati
     if ($id == 21) {
         $host = $_SERVER['HTTP_HOST'];
         $uri = rtrim(dirname($_SERVER['PHP_SELF']), '/\\');
@@ -44,12 +47,15 @@ echo $THEME
         exit;
     }
 
+    // prendo il valore contenuto nell' input hidden della precedente domanda, se è presente
+    // per riuscire a memorizzare la risposta precedentemente assegnata
     if (isset($_POST["oldId"]))
         getPost($_POST["oldId"]);
 
     $domande = $_SESSION["domande"];
+    // salvo la domanda da mostrare
     $domanda = $domande[$id - 1];
-
+    // la stringa bonus
     $aiuto = $domanda["desc"];
 
     // print header
@@ -60,19 +66,21 @@ echo $THEME
     <div class="container-md d-flex cont-g ">
         <form action="domanda.php" method="post">
             <?php
-
             echo '<input type="hidden" name="oldId" value="' . $id . '">';
             ?>
             <div class="shadow card">
                 <div class="d-links card-header">
                     <ul class="nav nav-tabs card-header-tabs">
                         <?php
+                        // stampo i numeri delle varie domande
                         foreach ($domande as $i => $d) {
                             $e = $i + 1;
                             $c = "";
+                            // se è la domanda corrente
                             if ($e == $id) {
                                 $c = "active";
                             }
+                            // se è una domanda già risposta
                             if ($_SESSION["risposte"][$e] != null) {
                                 $c .= " done";
                             }
@@ -96,10 +104,12 @@ echo $THEME
 
                                 <div class="form-check">
                                     <?php
+                                    // stampo la risposta multipla
                                     $ris = [$domanda["A"], $domanda["B"], $domanda["C"], $domanda["D"]];
 
                                     for ($i = 0; $i < count($ris); $i++) {
                                         $ck = "";
+                                        // se la risposta è già stata data
                                         if ($_SESSION["risposte"][$id] != null) {
                                             if ($_SESSION["risposte"][$id] == $ris[$i]) {
                                                 $ck = "checked";
@@ -119,6 +129,7 @@ echo $THEME
                                     <div class="card-body">
                                         <h5 class="card-title">Bonus <span class="
                                         <?php
+                                        // se sono finiti i bonus rosso, altrimenti verde
                                         if ($_SESSION["bonus"] == 0) {
                                             echo "text-danger";
                                         } else {
@@ -133,14 +144,17 @@ echo $THEME
                                         <p class="card-text">
                                             <?php
                                             if ($bonus) {
+                                                // se è attivo il bonus
                                                 echo $aiuto;
                                             } else
                                                 echo "Serve per ottenere la descrizione del personaggio, ne possiedi una quantità limitata";
                                             ?>
                                         </p>
                                         <?php
+                                        // rimuovo il bottone se il bonus è attivo
                                         if (!$bonus) {
                                             $c = "";
+                                            // rendo il bottone non cliccabile se sono finiti i bonus
                                             if ($_SESSION["bonus"] == 0)
                                                 $c = " disabled";
                                             echo '<button type="submit" name="bonus" value="' . $_SESSION["bonus"] - 1 . '"  class="btn btn-primary' . $c . '">Utizza il Bonus</button>';
@@ -154,11 +168,14 @@ echo $THEME
                                 <nav aria-label="...">
                                     <ul class="pagination pagination-lg" style="margin: 0;">
                                         <?php
+                                        // bottoni Avanti e Indietro
                                         $c = "";
+                                        // disabilito il bottone indietro alla prima domanda
                                         if ($id == 1) {
                                             $c = "disabled";
                                         }
 
+                                        // bottone indietro
                                         $pid = $id - 1;
                                         echo '<li class="page-item ' . $c . '"><button type="submit" name="id" value="' . $pid . '"  class="page-link">&laquo; Domanda Precedente</button></li>';
                                         ?>
@@ -167,6 +184,7 @@ echo $THEME
                                             <button type="submit" name="id" value="<?php echo $id + 1 ?>"
                                                 class="page-link">
                                                 <?php
+                                                // Se siamo all'ultima domanda invece che indietro scrivo Invia Le Risposte
                                                 if ($id == 20) {
                                                     echo "Invia Le Risposte";
                                                 } else {
@@ -187,4 +205,5 @@ echo $THEME
     <div id="mainWrap"></div>
     <div id="main"></div>
 </body>
+
 </html>
