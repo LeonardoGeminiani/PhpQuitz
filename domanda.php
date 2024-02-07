@@ -10,6 +10,7 @@
 </head>
 <?php
 include("function.php");
+// includo la parte di codice dedicata a gestire il cokie del tema
 include("themeGetter.php");
 ?>
 
