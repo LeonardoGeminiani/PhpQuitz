@@ -37,13 +37,16 @@ include("themeGetter.php");
         
         $domandeSel = [];
         $_SESSION["risposte"] = [];
+        $_SESSION["bonusUtil"] = [];
         
         for($i = 0; $i < 20; $i++){
             array_push($domandeSel, $domande[$rnd[$i]]);
             $_SESSION["risposte"] [$i+1] = null;
+            $_SESSION["bonusUtil"] [$i+1] = false;
         }
 
         $_SESSION["domande"] = $domandeSel;
+        $_SESSION["bonus"] = $_SESSION["maxBonus"] = 6;
         // var_dump($domandeSel);
 
         // print header

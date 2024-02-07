@@ -24,10 +24,17 @@ echo $THEME
     $id = $_POST["id"];
 
     // chache id, if theme is changed using another form
-    if(!isset($id)){
+    if (!isset($id)) {
         $id = $_SESSION["id"];
     } else {
         $_SESSION["id"] = $id;
+    }
+
+    if ($bonus = isset($_POST["bonus"])) {
+        $_SESSION["bonus"] = $_POST["bonus"];
+        $_SESSION["bonusUtil"][$id] = true;
+    } else if ($_SESSION["bonusUtil"][$id]) {
+        $bonus = true;
     }
 
     if ($id == 21) {
@@ -71,7 +78,7 @@ echo $THEME
         ?> method="post">
 
             <?php
-                echo '<input type="hidden" name="oldId" value="'. $id .'">';
+            echo '<input type="hidden" name="oldId" value="' . $id . '">';
             ?>
             <div class="shadow card">
                 <div class="d-links card-header">
@@ -82,6 +89,9 @@ echo $THEME
                             $c = "";
                             if ($e == $id) {
                                 $c = "active";
+                            }
+                            if ($_SESSION["risposte"][$e] != null) {
+                                $c .= " done";
                             }
                             echo '<li class="nav-item"><button class="nav-link ' . $c . '" type="submit" name="id" value="' . $e . '">' . $e . "</button></li>";
                         }
@@ -101,37 +111,74 @@ echo $THEME
 
                     <div class="d-flex">
                         <div class="m-4">
-                            <img class="rounded img" src="<?php echo $domanda["img"]; ?>">
+                            <img class="rounded img domanda-img" src="<?php echo $domanda["img"]; ?>">
                         </div>
-                        <div class="m-4">
-                            <h1>
-                                Indovina il personaggio famoso
-                            </h1>
+                        <div class="m-4 d-flex flex-column justify-content-between">
 
-                            <div class="form-check">
-                                <?php
-                                $ris = [$domanda["A"], $domanda["B"], $domanda["C"]];
+                            <div>
+                                <h1>
+                                    Indovina il personaggio famoso
+                                </h1>
 
-                                for ($i = 0; $i < count($ris); $i++) {
-                                    $ck = "";
-                                    if ($_SESSION["risposte"][$id] != null) {
-                                        if ($_SESSION["risposte"][$id] == $ris[$i]) {
-                                            $ck = "checked";
+                                <div class="form-check">
+                                    <?php
+                                    $ris = [$domanda["A"], $domanda["B"], $domanda["C"]];
+
+                                    for ($i = 0; $i < count($ris); $i++) {
+                                        $ck = "";
+                                        if ($_SESSION["risposte"][$id] != null) {
+                                            if ($_SESSION["risposte"][$id] == $ris[$i]) {
+                                                $ck = "checked";
+                                            }
                                         }
-                                    }
 
-                                    echo <<<EOL
-                                        <div class="form-check my-in">
-                                            <input class="form-check-input" type="radio" id="sel_$i" name="sel" value="$ris[$i]" $ck>
-                                            <label class="fs-4 form-check-label" for="sel_$i">$ris[$i]</label>
-                                        </div>
-                                        EOL;
-                                }
-                                ?>
+                                        echo <<<EOL
+                                            <div class="form-check my-in">
+                                                <input class="form-check-input" type="radio" id="sel_$i" name="sel" value="$ris[$i]" $ck>
+                                                <label class="fs-4 form-check-label" for="sel_$i">$ris[$i]</label>
+                                            </div>
+                                            EOL;
+                                    }
+                                    ?>
+                                </div>
+                                <div class="card mt-5">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Bonus <span class="
+                                        <?php
+                                        if ($_SESSION["bonus"] == 0) {
+                                            echo "text-danger";
+                                        } else {
+                                            echo "text-success";
+                                        }
+                                        ?>
+                                        ">
+                                                <?php
+                                                echo $_SESSION["bonus"] . "/" . $_SESSION["maxBonus"];
+                                                ?>
+                                            </span></h5>
+                                        <p class="card-text">
+                                            <?php
+                                            if ($bonus) {
+                                                echo $aiuto;
+                                            } else
+                                                echo "Serve per ottenere la descrizione del personaggio, ne possiedi una quantità limitata";
+                                            ?>
+                                        </p>
+                                        <?php
+                                        if (!$bonus) {
+                                            $c = "";
+                                            if ($_SESSION["bonus"] == 0)
+                                                $c = " disabled";
+                                            echo '<button type="submit" name="bonus" value="' . $_SESSION["bonus"] - 1 . '"  class="btn btn-primary' . $c . '">Utizza il Bonus</button>';
+                                        }
+                                        ?>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="mt-4">
+
+                            <div class="mt-3">
                                 <nav aria-label="...">
-                                    <ul class="pagination pagination-lg">
+                                    <ul class="pagination pagination-lg" style="margin: 0;">
                                         <?php
                                         $c = "";
                                         if ($id == 1) {
