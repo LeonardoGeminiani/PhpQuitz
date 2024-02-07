@@ -51,7 +51,11 @@ include("themeGetter.php");
     ?>
 
     <h1>Inizia il Quiz!!</h1>
-    <a href="domanda.php?id=1" class="btn btn-primary">Inizia</a>
+
+    <form method="post" action="domanda.php">
+        <button type="submit" name="id" value="1" class="btn btn-primary">Inizia</button>
+    </form>
+
     
 
     <div id="mainWrap"></div>
