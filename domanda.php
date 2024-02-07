@@ -45,7 +45,8 @@ echo $THEME
         exit;
     }
 
-    getPost($_POST["oldId"]);
+    if(isset($_POST["oldId"]))
+        getPost($_POST["oldId"]);
 
     $domande = $_SESSION["domande"];
     $domanda = $domande[$id - 1];
