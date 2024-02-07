@@ -56,10 +56,12 @@ echo $THEME
     //     header('Location: http://'. $_SERVER['HTTP_HOST'] . "/domanda.php?id=1");
     // }
     
-    $query = urlencode($domanda["nome"]);
+    // $query = urlencode($domanda["nome"]);
 
-    $response = file_get_contents("https://kgsearch.googleapis.com/v1/entities:search?languages=it&query=" . $query . "&key=AIzaSyAz65f_5fNhV7wFpguCMBlD5m5BCTtteVg&limit=1&indent=True");
-    $response = json_decode($response, true);
+    // $response = file_get_contents("https://kgsearch.googleapis.com/v1/entities:search?languages=it&query=" . $query . "&key=AIzaSyAz65f_5fNhV7wFpguCMBlD5m5BCTtteVg&limit=1&indent=True");
+    // $response = json_decode($response, true);
+
+    $aiuto = $domanda["desc"];
 
     // print header
     include("header.php");
@@ -101,10 +103,10 @@ echo $THEME
 
                 <div class="card-body">
                     <?php
-                    if (isset($response["itemListElement"][0]["result"]["description"])) {
-                        $aiuto = $response["itemListElement"][0]["result"]["description"];
-                        // echo $aiuto;
-                    }
+                    // if (isset($response["itemListElement"][0]["result"]["description"])) {
+                    //     $aiuto = $response["itemListElement"][0]["result"]["description"];
+                    //     // echo $aiuto;
+                    // }
                     ?>
 
 
@@ -122,7 +124,7 @@ echo $THEME
 
                                 <div class="form-check">
                                     <?php
-                                    $ris = [$domanda["A"], $domanda["B"], $domanda["C"]];
+                                    $ris = [$domanda["A"], $domanda["B"], $domanda["C"],  $domanda["D"]];
 
                                     for ($i = 0; $i < count($ris); $i++) {
                                         $ck = "";

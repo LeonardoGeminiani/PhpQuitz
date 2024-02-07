@@ -26,7 +26,9 @@ include("themeGetter.php");
                 "A" => $data[1],
                 "B" => $data[2],
                 "C" => $data[3],
-                "img" => $data[4]
+                "D" => $data[4],
+                "img" => $data[5],
+                "desc" => $data[6],
             ]);
         }
 
