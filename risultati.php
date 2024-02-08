@@ -15,7 +15,7 @@ include("themeGetter.php");
     echo $THEME
 ?>">
     <?php
-        // print header
+        // stampo l'header
         include("header.php");
     ?>
 
