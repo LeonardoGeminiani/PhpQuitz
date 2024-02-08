@@ -39,6 +39,11 @@ echo $THEME
         $bonus = true;
     }
 
+    // prendo il valore contenuto nell' input hidden della precedente domanda, se è presente
+    // per riuscire a memorizzare la risposta precedentemente assegnata
+    if (isset($_POST["oldId"]))
+        getPost($_POST["oldId"]);
+
     // dopo l'ultima domanda ridireziono il server verso la pagina dei risultati
     if ($id == 21) {
         $host = $_SERVER['HTTP_HOST'];
@@ -47,11 +52,6 @@ echo $THEME
         header("Location: http://$host$uri/$extra");
         exit;
     }
-
-    // prendo il valore contenuto nell' input hidden della precedente domanda, se è presente
-    // per riuscire a memorizzare la risposta precedentemente assegnata
-    if (isset($_POST["oldId"]))
-        getPost($_POST["oldId"]);
 
     $domande = $_SESSION["domande"];
     // salvo la domanda da mostrare

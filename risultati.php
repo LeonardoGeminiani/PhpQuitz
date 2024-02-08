@@ -25,7 +25,6 @@ include("themeGetter.php");
                 <?php
 
                 session_start();
-                getPost(20);
                 
                 $ris = $_SESSION["risposte"];
                 $domande = $_SESSION["domande"];
